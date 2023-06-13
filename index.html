@@ -1,822 +1,1071 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark navbar-vertical-collapsed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Панель управления | ОИТСиЗИ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="theme.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="theme.css">
-</head>
-
-<body>
-  <!-- ===============================================-->
-  <!--    Основной контент страницы     -->
-  <!-- ===============================================-->
-  <main class="main">
-
+  <body>
     <!-- ===============================================-->
-    <!--    Левое меню навигации     -->
+    <!--    Основной контент страницы     -->
     <!-- ===============================================-->
-    <nav class="navbar navbar-vertical navbar-expand-lg">
-      <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
-        <div class="navbar-vertical-content">
-          <ul class="navbar-nav flex-column" id="navbarVerticalNav">
-            <li class="nav-item">
-
-              <p class="navbar-vertical-label">Администрирование</p>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1 active" href="pages/esphere.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-screwdriver-wrench fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">Панель управления</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/esphere.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-book-user fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">Телефонный справочник</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/esphere.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-gear fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">Управление сайтом</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-
-            </li>
-            <li class="nav-item">
-
-              <p class="navbar-vertical-label">Управление активами</p>
-              <hr class="navbar-vertical-line" />
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#computers" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="computers">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fas fa-caret-right"></span>
+    <main class="main">
+      <!-- ===============================================-->
+      <!--    Левая колонка навигации     -->
+      <!-- ===============================================-->
+      <nav class="navbar navbar-vertical navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+          <div class="navbar-vertical-content">
+            <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+              <li class="nav-item">
+                <p class="navbar-vertical-label">Администрирование</p>
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1 active" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-screwdriver-wrench fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">Панель управления</span>
+                      </span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-desktop fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">Компьютеры и перефирия</span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="computers">
-                    <li class="nav-item">
-                      <a class="nav-link dropdown-indicator" href="#pcs" data-bs-toggle="collapse" aria-expanded="true"
-                        aria-controls="computers">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon"><span class="fas fa-caret-right"></span></div><span
-                            class="nav-link-text">ПЭВМ</span>
-                        </div>
-                      </a>
-                      <div class="parent-wrapper">
-                        <ul class="nav collapse parent show" data-bs-parent="#computers" id="pcs">
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Все</span>
-                              </div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Компьютеры</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Моноблоки</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Ноутбуки</span>
-                              </div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Планшеты</span></div>
-                            </a>
-                          </li>
-                        </ul>
+                  </a>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-book-user fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">Телефонный справочник</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-gear fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">Управление сайтом</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <p class="navbar-vertical-label">Управление активами</p>
+                <hr class="navbar-vertical-line" />
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#computers"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="computers"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
                       </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link dropdown-indicator" href="#printers" data-bs-toggle="collapse"
-                        aria-expanded="true" aria-controls="e-commerce">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown-indicator-icon">
-                            <span class="fas fa-caret-right"></span>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-desktop fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Компьютеры и периферия</span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="computers">
+                      <li class="collapsed-nav-item-title d-none">Компьютеры и периферия</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
                           </div>
-                          <span class="nav-link-text">Оргтехника</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link dropdown-indicator" href="#pcs" data-bs-toggle="collapse" aria-expanded="true" aria-controls="computers">
+                          <div class="d-flex align-items-center">
+                            <div class="dropdown-indicator-icon">
+                              <span class="fa fa-caret-right"></span>
+                            </div>
+                            <span class="nav-link-text">ПЭВМ</span>
+                          </div>
+                        </a>
+                        <div class="parent-wrapper">
+                          <ul class="nav collapse parent" data-bs-parent="#computers" id="pcs">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Компьютеры</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Моноблоки</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Ноутбуки</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Планшеты</span>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
                         </div>
-                      </a>
-                      <div class="parent-wrapper">
-                        <ul class="nav collapse parent show" data-bs-parent="#e-commerce" id="printers">
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Все</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">МФУ</span>
-                              </div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Принтеры</span>
-                              </div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Сканеры</span></div>
-                            </a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="apps/e-commerce/landing/checkout.html"
-                              data-bs-toggle="" aria-expanded="false">
-                              <div class="d-flex align-items-center"><span class="nav-link-text">Потоковые
-                                  сканеры</span></div>
-                            </a>
-                          </li>
-                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link dropdown-indicator"
+                          href="#printers"
+                          data-bs-toggle="collapse"
+                          aria-expanded="true"
+                          aria-controls="e-commerce"
+                        >
+                          <div class="d-flex align-items-center">
+                            <div class="dropdown-indicator-icon">
+                              <span class="fa fa-caret-right"></span>
+                            </div>
+                            <span class="nav-link-text">Оргтехника</span>
+                          </div>
+                        </a>
+                        <div class="parent-wrapper">
+                          <ul class="nav collapse parent" data-bs-parent="#e-commerce" id="printers">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">МФУ</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Принтеры</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Сканеры</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="apps/e-commerce/landing/checkout.html" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Потоковые сканеры</span>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Мониторы</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Вэб-камеры</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">USB-накопители</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#network"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="network"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
                       </div>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Мониторы</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Вэб-камеры</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">USB-накопители</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#network" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="esignatures">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fa fa-caret-right"></span>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-server fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Сетевое оборудование</span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-server fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">Сетевое оборудование</span>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="network">
+                      <li class="collapsed-nav-item-title d-none">Сетевое оборудование</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Серверы</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Маршрутизаторы</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Коммутаторы</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">ViPNet координаторы</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="network">
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Все</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Серверы</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Маршрутизаторы</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Коммутаторы</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Координаторы</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#vipnet-keys" role="button"
-                  data-bs-toggle="collapse" aria-expanded="false" aria-controls="vipnet-keys">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fa fa-caret-right"></span>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#telephony"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="telephony"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-phone-office fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Телефония</span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-key fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">Ключи VipNet</span>
-                    <span class="fa-solid fa-circle text-info ms-1 new-page-indicator" style="font-size: 6px"></span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="vipnet-keys">
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Новая заявка</span>
-                          <span class="badge ms-2 badge badge-phoenix badge-phoenix-info ">+</span>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="telephony">
+                      <li class="collapsed-nav-item-title d-none">Телефония</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">АТС</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Селекторы</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link dropdown-indicator" href="#phones" data-bs-toggle="collapse" aria-expanded="true" aria-controls="phones">
+                          <div class="d-flex align-items-center">
+                            <div class="dropdown-indicator-icon">
+                              <span class="fa fa-caret-right"></span>
+                            </div>
+                            <span class="nav-link-text">Телефоны</span>
+                          </div>
+                        </a>
+                        <div class="parent-wrapper">
+                          <ul class="nav collapse parent" data-bs-parent="#telephony" id="phones">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">IP-телефония</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Аналоговые телефоны</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Мобильные телефоны</span>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
                         </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Журнал учета</span></div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Журнал выдачи</span></div>
-                      </a>
-                    </li>
-                  </ul>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#esignatures" role="button"
-                  data-bs-toggle="collapse" aria-expanded="false" aria-controls="esignatures">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fa fa-caret-right"></span>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#vipnet-keys"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="vipnet-keys"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-key fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Ключи VipNet</span>
+                      <span class="fa-solid fa-circle text-info ms-1 new-page-indicator" style="font-size: 6px"></span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-usb-drive fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">ЭЦП</span>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="vipnet-keys">
+                      <li class="collapsed-nav-item-title d-none">Ключи VipNet</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="esignatures">
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Новая заявка</span>
-                          <span class="badge ms-2 badge badge-phoenix badge-phoenix-info ">+</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Журнал учета</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Журнал выдачи</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#ip-network" role="button"
-                  data-bs-toggle="collapse" aria-expanded="false" aria-controls="ip-network">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fa fa-caret-right"></span>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#esignatures"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="esignatures"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-usb-drive fa-rotate-180 fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">ЭЦП</span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-network-wired fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">IP-сетка</span>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="esignatures">
+                      <li class="collapsed-nav-item-title d-none">ЭЦП</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="ip-network">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Добавить запись</span>
-                          <span class="badge ms-2 badge badge-phoenix badge-phoenix-info ">+</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Все подсети</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Windows подсети</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Astra подсети</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Интернет</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#hdd" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="hdd">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fa fa-caret-right"></span>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#ip-network"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="ip-network"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-network-wired fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">IP-сетка</span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-hard-drive fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">НЖМД</span>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="ip-network">
+                      <li class="collapsed-nav-item-title d-none">IP-сетка</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link dropdown-indicator" href="#subnets" data-bs-toggle="collapse" aria-expanded="true" aria-controls="subnets">
+                          <div class="d-flex align-items-center">
+                            <div class="dropdown-indicator-icon">
+                              <span class="fa fa-caret-right"></span>
+                            </div>
+                            <span class="nav-link-text">Подсети</span>
+                          </div>
+                        </a>
+                        <div class="parent-wrapper">
+                          <ul class="nav collapse parent" data-bs-parent="#computers" id="subnets">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Windows</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Astra Linux</span>
+                                </div>
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                                <div class="d-flex align-items-center">
+                                  <span class="nav-link-text">Интернет</span>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="hdd">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Добавить запись</span>
-                          <span class="badge ms-2 badge badge-phoenix badge-phoenix-info ">+</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Журнал учета</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#sim" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="sim">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fa fa-caret-right"></span>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#hdd"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="hdd"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-hard-drive fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Учет НЖМД</span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-sim-card fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">СИМ-карты</span>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="hdd">
+                      <li class="collapsed-nav-item-title d-none">Учет НЖМД</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="sim">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Добавить запись</span>
-                          <span class="badge ms-2 badge badge-phoenix badge-phoenix-info ">+</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Журнал учета</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-            </li>
-            <li class="nav-item">
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#sim-cards"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="sim-cards"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-sim-card fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">СИМ-карты</span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="sim-cards">
+                      <li class="collapsed-nav-item-title d-none">СИМ-карты</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <p class="navbar-vertical-label">Управление пользователями</p>
+                <hr class="navbar-vertical-line" />
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-user fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">УЗ СУДИС</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-list-tree fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">ОШС</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-globe fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">Госзапросы</span>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#ibd"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="ibd"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-user-secret fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">ИБД</span>
+                      <span class="fa-solid fa-circle text-info ms-1 new-page-indicator" style="font-size: 6px"></span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="ibd">
+                      <li class="collapsed-nav-item-title d-none">ИБД</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Приказ на ОСК</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">ИБД-Р</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">ИБД-Ф</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">ИБД-Ф: Опознание</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">ИБД-Ф: ДМ</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#isod"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="isod"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-user-police fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Сервисы ИСОД</span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="isod">
+                      <li class="collapsed-nav-item-title d-none">Сервисы ИСОД</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Следопыт</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">ФИС ГИБДД-М</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">СОДЧ</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">СПГУ</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <p class="navbar-vertical-label">Аттестация ИСОД</p>
+                <hr class="navbar-vertical-line" />
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#passports"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="passports"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-passport fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Паспорта объектов</span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="passports">
+                      <li class="collapsed-nav-item-title d-none">Паспорта объектов</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#building-plans"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="building-plans"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-building fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Планы зданий</span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="building-plans">
+                      <li class="collapsed-nav-item-title d-none">Планы зданий</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#aida-reports"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="aida-reports"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-memo-circle-info fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Отчеты AIDA</span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="aida-reports">
+                      <li class="collapsed-nav-item-title d-none">Отчеты AIDA</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Создать</span>
+                            <span class="fa-solid fa-plus fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Сводная таблица</span>
+                            <span class="fa-regular fa-table fa-lg ms-2 text-info"></span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#access-matrix"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="access-matrix"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-shield-keyhole fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Матрица доступа</span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="access-matrix">
+                      <li class="collapsed-nav-item-title d-none">Матрица доступа</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">Помещения</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">ПЭВМ</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
 
-              <p class="navbar-vertical-label">Управление пользователями</p>
-              <hr class="navbar-vertical-line" />
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/sudis.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-user fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">УЗ СУДИС</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/faq.html" role="button" data-bs-toggle="" aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-list-tree fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">ОШС</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="pages/esphere.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-globe fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">Госзапросы</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#ibd" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="ibd">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fas fa-caret-right"></span>
+              <li class="nav-item">
+                <p class="navbar-vertical-label">Госуслуги</p>
+                <hr class="navbar-vertical-line" />
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-toilet-paper-blank-under fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">КНД</span>
+                      </span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-user-secret fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">ИБД</span>
-                    <span class="fa-solid fa-circle text-info ms-1 new-page-indicator" style="font-size: 6px"></span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="ibd">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Новая заявка</span>
-                          <span class="badge ms-2 badge badge-phoenix badge-phoenix-info ">+</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Приказ на ОСК</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">ИБД-Р</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">ИБД-Ф</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">ИБД-Ф: Опознание</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">ИБД-Ф: ДМ</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                  </a>
                 </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#isod" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="isod">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fa fa-caret-right"></span>
+                <div class="nav-item-wrapper">
+                  <a
+                    class="nav-link dropdown-indicator label-1"
+                    href="#sueo"
+                    role="button"
+                    data-bs-toggle="collapse"
+                    aria-expanded="false"
+                    aria-controls="sueo"
+                  >
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon">
+                        <span class="fa fa-caret-right"></span>
+                      </div>
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-list-ol fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text">Электронная очередь</span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-user-police fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">Сервисы ИСОД</span>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="sueo">
+                      <li class="collapsed-nav-item-title d-none">Электронная очередь</li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">ОВМ</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
+                          <div class="d-flex align-items-center">
+                            <span class="nav-link-text">РЭО</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="isod">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Следопыт</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">ФИС ГИБДД-М</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">СОДЧ</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
                 </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <p class="navbar-vertical-label">Аттестация ИСОД</p>
-              <hr class="navbar-vertical-line" />
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#passports" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="passports">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fas fa-caret-right"></span>
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-users-line fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">Рабочая группа</span>
+                      </span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-passport fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">Паспорта объектов</span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="passports">
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Добавить паспорт</span>
-                          <span class="badge ms-2 badge badge-phoenix badge-phoenix-info ">+</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Все</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                  </a>
                 </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#building-plans" role="button"
-                  data-bs-toggle="collapse" aria-expanded="false" aria-controls="building-plans">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fa fa-caret-right"></span>
+                <div class="nav-item-wrapper">
+                  <a class="nav-link label-1" href="#" role="button" data-bs-toggle="" aria-expanded="false">
+                    <div class="d-flex align-items-center">
+                      <span class="nav-link-icon">
+                        <span class="fa-light fa-file-exclamation fa-lg"></span>
+                      </span>
+                      <span class="nav-link-text-wrapper">
+                        <span class="nav-link-text">Контрольные карточки</span>
+                      </span>
                     </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-building fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">Планы зданий</span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="building-plans">
-                    <li class="nav-item"><a class="nav-link" href="modules/icons/feather.html" data-bs-toggle=""
-                        aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Добавить план</span>
-                          <span class="badge ms-2 badge badge-phoenix badge-phoenix-info ">+</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="modules/icons/font-awesome.html" data-bs-toggle=""
-                        aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Все</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                  </a>
                 </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#tables" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="tables">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fas fa-caret-right"></span>
-                    </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-memo-circle-info fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">Отчеты AIDA</span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="tables">
-                    <li class="collapsed-nav-item-title d-none">Tables</li>
-                    <li class="nav-item"><a class="nav-link" href="modules/tables/basic-tables.html" data-bs-toggle=""
-                        aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Добавить отчет</span></div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="modules/tables/advance-tables.html" data-bs-toggle=""
-                        aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Все</span></div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="modules/tables/bulk-select.html" data-bs-toggle=""
-                        aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Bulk Select</span></div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#ECharts" role="button" data-bs-toggle="collapse"
-                  aria-expanded="false" aria-controls="ECharts">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fas fa-caret-right"></span>
-                    </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-shield-keyhole fa-lg "></span>
-                    </span>
-                    <span class="nav-link-text">Матрица доступа</span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="ECharts">
-                    <li class="nav-item"><a class="nav-link" href="modules/echarts/line-charts.html" data-bs-toggle=""
-                        aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Помещения</span></div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="modules/echarts/bar-charts.html" data-bs-toggle=""
-                        aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">ПЭВМ</span></div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item">
-              <p class="navbar-vertical-label">Госуслуги</p>
-              <hr class="navbar-vertical-line" />
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#customization" role="button"
-                  data-bs-toggle="collapse" aria-expanded="false" aria-controls="customization">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fas fa-caret-right"></span>
-                    </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-toilet-paper-blank-under fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">КНД</span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="customization">
-                    <li class="collapsed-nav-item-title d-none">Customization</li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Configuration</span></div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Styling</span></div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Dark mode</span></div>
-                      </a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-text">Plugin</span></div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link dropdown-indicator label-1" href="#layouts-doc" role="button"
-                  data-bs-toggle="collapse" aria-expanded="false" aria-controls="layouts-doc">
-                  <div class="d-flex align-items-center">
-                    <div class="dropdown-indicator-icon">
-                      <span class="fas fa-caret-right"></span>
-                    </div>
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-list-ol fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text">СУЭО</span>
-                  </div>
-                </a>
-                <div class="parent-wrapper label-1">
-                  <ul class="nav collapse parent" data-bs-parent="#navbarVerticalCollapse" id="layouts-doc">
-                    <li class="collapsed-nav-item-title d-none">Layouts doc</li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Vertical navbar</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Horizontal navbar</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Combo navbar</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#" data-bs-toggle="" aria-expanded="false">
-                        <div class="d-flex align-items-center">
-                          <span class="nav-link-text">Dual nav</span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="documentation/getting-started.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-users-line fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">Рабочая группа</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-              <div class="nav-item-wrapper">
-                <a class="nav-link label-1" href="documentation/gulp.html" role="button" data-bs-toggle=""
-                  aria-expanded="false">
-                  <div class="d-flex align-items-center">
-                    <span class="nav-link-icon">
-                      <span class="fa-light fa-file-exclamation fa-lg"></span>
-                    </span>
-                    <span class="nav-link-text-wrapper">
-                      <span class="nav-link-text">Контрольные карточки</span>
-                    </span>
-                  </div>
-                </a>
-              </div>
-
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-    <nav class="navbar navbar-top fixed-top navbar-expand-lg">Nav top</nav>
-    <div class="content">Content</div>
-  </main>
+      </nav>
+      <nav class="navbar navbar-top fixed-top navbar-expand-lg">
+        <button class="btn" onclick="toggleAsideView()">
+          <span id="aside-to-left" class="fa-regular fa-bars fa-lg"></span>
+        </button>
+      </nav>
+      <div class="content">Content</div>
+    </main>
 
-  <!-- ===============================================-->
-  <!--    JavaScripts-->
-  <!-- ===============================================-->
-  <script src="../vendors/popper/popper.min.js"></script>
-  <script src="../vendors/bootstrap/bootstrap.min.js"></script>
-  <script src="../vendors/fontawesome/all.min.js"></script>
-</body>
-
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../vendors/popper/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../vendors/fontawesome/all.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
